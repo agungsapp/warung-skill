@@ -59,6 +59,8 @@
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="{{ asset('user') }}/css/style.css">
 
+		<link rel="stylesheet" href="{{ asset('user') }}/css/custom.css">
+
 </head>
 
 <body>

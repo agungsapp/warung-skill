@@ -241,8 +241,13 @@ Header Area
 																				<i class="far fa-shopping-cart"></i>
 																				<span class="badge">5</span>
 																		</button>
-																		<a href="contact.html" class="th-btn ml-25">Daftar / Login <i
-																						class="fas fa-arrow-right ms-1"></i></a>
+																		{{-- <a href="contact.html" class="th-btn ml-25">Daftar / Login <i
+																						class="fas fa-arrow-right ms-1"></i></a> --}}
+
+																		<!-- Button trigger modal login -->
+																		<button type="button" class="th-btn ml-25" data-bs-toggle="modal" data-bs-target="#modalLogin">
+																				Daftar / Login <i class="fas fa-arrow-right ms-1"></i>
+																		</button>
 																</div>
 														</div>
 												</div>
@@ -252,3 +257,54 @@ Header Area
 				</div>
 		</div>
 </header>
+<!-- Modal login -->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+						<div
+								class="modal-login d-flex justify-content-between flex-column align-content-between align-items-center gap-3">
+								<img src="{{ asset('user') }}/img/logo.webp" alt="" srcset="">
+
+								{{-- main login --}}
+								<div class="main-login d-flex justify-content-between align-content-between align-items-center flex-column">
+										<div class="title text-center">
+												<h4>Login</h4>
+												<p>Untuk Lanjut Belajar</p>
+										</div>
+										<div class="mb-3">
+												<input type="text" name="email" placeholder="Email">
+										</div>
+										<div class="mb-3">
+												<input type="password" name="password" placeholder="Password">
+										</div>
+
+
+										<div class="d-flex w-100 justify-content-between">
+												<button class="btn btn-warning fw-bold px-3">Masuk</button>
+												<a href="#" class="text-decoration-none">Lupa password ?</a>
+										</div>
+
+								</div>
+
+								<div class="d-flex flex-column text-center">
+										<p class="mb-1">Belum punya akun ?</p>
+										<h5>Buat Akun</h5>
+								</div>
+
+						</div>
+
+
+						{{-- <div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+								...
+						</div>
+						<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+						</div> --}}
+				</div>
+		</div>
+</div>
