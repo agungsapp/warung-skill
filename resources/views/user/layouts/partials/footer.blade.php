@@ -146,6 +146,8 @@
 <!-- Main Js File -->
 <script src="{{ asset('user') }}/js/main.js"></script>
 
+@livewireScripts
+
 </body>
 
 </html>
