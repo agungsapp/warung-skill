@@ -61,6 +61,8 @@
 
 		<link rel="stylesheet" href="{{ asset('user') }}/css/custom.css">
 
+		@livewireStyles
+
 </head>
 
 <body>

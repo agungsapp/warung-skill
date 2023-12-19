@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('gender')->nullable();
             $table->string('job')->nullable();
+            $table->string('image')->nullable();
             $table->boolean('status_online')->default(false);
             $table->timestamp('last_login')->nullable();
             $table->timestamps();
