@@ -24,14 +24,14 @@
     --ripple-ani-duration: 5s;
 }
 
-.modal-login {
+/* .modal-login {
     width: 501px;
-    /* height: 674px; */
+    height: 674px;
     padding: 66px 82px 66px 81px;
     border-radius: 10px;
     background: var(--white, #fff);
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
-}
+} */
 
 .modal-login img {
     width: 50%;
@@ -45,7 +45,8 @@
 
 .main-login div input {
     display: flex;
-    width: 338px;
+    width: 100%;
+    max-width: 338px;
     padding: 15px 22px;
     align-items: center;
     gap: 91px;
@@ -53,4 +54,45 @@
     border-radius: 10px;
     border: 2px solid #2c313a;
     background: var(--white, #fff);
+}
+
+/* Untuk perangkat ekstra kecil (handphone), kurang dari 576px */
+@media only screen and (max-width: 575.98px) {
+    /* CSS di sini */
+}
+
+/* Untuk perangkat kecil (handphone besar), 576px dan lebih */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    /* CSS di sini */
+}
+
+/* Untuk perangkat menengah (tablet), 768px dan lebih */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    /* CSS di sini */
+}
+
+/* Untuk perangkat besar (desktop kecil), 992px dan lebih */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    /* CSS di sini */
+    .modal-login {
+        width: 501px;
+        height: 574px;
+        padding: 20px;
+        border-radius: 10px;
+        background: var(--white, #fff);
+        box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
+    }
+}
+
+/* Untuk perangkat ekstra besar (desktop besar), 1200px dan lebih */
+@media only screen and (min-width: 1200px) {
+    /* CSS di sini */
+    .modal-login {
+        width: 501px;
+        height: 574px;
+        padding: 30px 82px 30px 81px;
+        border-radius: 10px;
+        background: var(--white, #fff);
+        box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
+    }
 }
